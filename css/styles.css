@@ -60,8 +60,8 @@ address ul li a {
 
 ul {
   display: flex;
-  gap: 40px;
   justify-content: center;
+  gap: 40px;
 }
 
 ul li {
@@ -99,15 +99,34 @@ nav ul li {
 
 .cover {
   display: flex;
-  background-color: #2e2f42;
+  background-image: url("../images/office.jpg");
+  background-size: cover;
   height: 600px;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2e2f42;
+  opacity: 0.5;
 }
 
 .section-1 ul {
   padding: 120px 156px;
+  gap: 40px;
 }
 
 .section-1 ul h3,
@@ -119,6 +138,8 @@ nav ul li {
 
 .section-1 ul h3 {
   text-align: left;
+  margin: 8px 0;
+  font-weight: 500;
 }
 
 .section-1 ul p {
@@ -126,6 +147,43 @@ nav ul li {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
+  height: 24px;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+}
+
+.icon-space {
+  display: flex;
+  background-color: #f4f4fd;
+  width: 264px;
+  height: 112px;
+  border: 1px solid #8e8f99;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.icon-instagram,
+.icon-twitter,
+.icon-facebook,
+.icon-linkedin {
+  color: #f4f4fd;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-sm-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% 50%;
+  background-color: #4d5ae5;
 }
 
 .our-team {
@@ -144,8 +202,22 @@ nav ul li {
   list-style-type: none;
 }
 
+.our-team ul li p {
+  margin: 8px 3px;
+}
+
 .our-team h2 {
   text-align: center;
+}
+
+.our-team ul li h3 {
+  margin-top: 32px;
+}
+
+.team-card {
+  height: 428px;
+  background-color: #ffffff;
+  border-radius: 4px;
 }
 
 .our-portfolio {
@@ -156,8 +228,8 @@ nav ul li {
   text-align: center;
 }
 
-.our-portfolio ul li {
-  justify-content: space-between;
+.our-portfolio ul {
+  gap: 24px;
 }
 
 .row1,
@@ -225,8 +297,25 @@ footer {
   height: 312px;
 }
 
-footer p {
-  color: #f4f4fd;
+.ficon-instagram,
+.ficon-twitter,
+.ficon-facebook,
+.ficon-linkedin {
+  width: 24px;
+  height: 24px;
+}
+
+.ficon-sm-space {
+  margin-right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  height: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50% 50%;
 }
 
 .logo2 {
@@ -237,9 +326,9 @@ footer p {
   letter-spacing: 0.03em;
   font-weight: 700;
   text-decoration: none;
-  margin-left: 156px;
   display: flex;
   margin-top: 100px;
+  margin-bottom: 8px;
 }
 
 .logo2 span,
@@ -255,9 +344,18 @@ footer p {
   text-decoration: none;
 }
 
-.text p {
-  margin-top: 16px;
+.text {
   margin-left: 156px;
   width: 264px;
   height: 72px;
+}
+
+.text2 {
+  margin-top: 100px;
+  margin-right: 692px;
+  margin-left: 120px;
+  width: 208px;
+}
+
+.text2 p {
 }
